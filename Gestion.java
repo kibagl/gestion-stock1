@@ -18,16 +18,11 @@ public class Gestion{
         private double prix=0;
 
         //afficherstock()
-
-        int pStock = 0
-        System.out.prinln("MENU D'AFFICHAGE DU STOCK ")
-        if (pStock = O) {
-            System.out.println("Aucune produit n'a été ajouté pour le moment")
-        } else{
-            for (pProduit p = pStock){
-                System.out.println(p)
-            }
+       public string afficherStock(){
+            
         }
+        System.out.prinln("MENU D'AFFICHAGE DU STOCK ");
+        return "[" "nom = "+nom+ "| prix = "+prix+ "| quantité=" +quantite+"]";
 
         // Constructeur d'initialisation
         public TeamGestion(String pNomProduit,int pPrix){
