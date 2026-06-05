@@ -49,12 +49,12 @@ static void vendreProduit(String pNomProduit, int pQuantite) {
         }
 
          //Affichage des produits en rupture de stock
-            public void afficherRuptureStock(){
-                int seuil = 10;
-                if(quantite < seuil){
-                    System.out.println(nomProduit);
-                }
+        public void afficherRuptureStock(){
+            int seuil = 10;
+            if(quantite < seuil){
+                System.out.println(nomProduit);
             }
+        }
     }
 
 
