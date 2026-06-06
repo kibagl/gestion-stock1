@@ -3,13 +3,14 @@ public class Gestion {
 
     // Functionnalities
     /*
-     * 1- ajouterProduit() ==> Jean Urbain
-     * 2- receptionnerProduit(int pQuantite) ==> Marie-Princesse
-     * 3- vendreProduit(int pQuantite) ==> Gloria
-     * 4- afficherStock() ==> Fovi Alphonse
-     * 5- afficherRuptureStock() ==> René KingBrain
-     * 6- Gestion de la méthode main. ==> Me ( c'est doyi )
-     */
+    1- ajouterProduit() ==> Jean Urbain
+    2- receptionnerProduit(int pQuantite) ==> Marie-Princesse 
+    3- vendreProduit(int pQuantite) ==> Gloria
+    4- afficherStock() ==> Fovi Alphonse
+    5- afficherRuptureStock() ==> René KingBrain
+    6- Gestion de la méthode main. ==> Me ( c'est doyi ,courage )
+    */
+
 
     public class TeamGestion {
         // Attributs
@@ -44,6 +45,9 @@ public class Gestion {
             nomProduit = pNomProduit;
             prix = pPrix;
         }
+        public static void receptionnerProduit( int pQuantite) {
+            this.quantite = this.quantite + pQuantite;
+        }    
 
          //Affichage des produits en rupture de stock
         public void afficherRuptureStock(){
@@ -53,6 +57,7 @@ public class Gestion {
             }
         }
     }
+    
 
 
     public static void main(String[] args) {
