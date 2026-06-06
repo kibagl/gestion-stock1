@@ -12,11 +12,17 @@ public class Gestion {
     */
 
 
-    public class TeamGestion {
+    static class TeamGestion {
         // Attributs
         private String nomProduit = "";
         private int quantite = 0;
         private double prix = 0;
+        
+        // Constructeur d'initialisation
+        public TeamGestion(String pNomProduit, int pPrix) {
+            nomProduit = pNomProduit;
+            prix = pPrix;
+        }
 
         public void vendreProduit(String pNomProduit, int pQuantite) {
             if (pQuantite <= 0) {
@@ -34,18 +40,12 @@ public class Gestion {
         }
 
         //afficherstock()
-       public string afficherStock(){
-            
-        }
-        System.out.prinln("MENU D'AFFICHAGE DU STOCK ");
-        return "[" "nom = "+nom+ "| prix = "+prix+ "| quantité=" +quantite+"]";
+       public String afficherStock(){
+            return "[" "nom = "+nom+ "| prix = "+prix+ "| quantité=" +quantite+"]";
 
-        // Constructeur d'initialisation
-        public TeamGestion(String pNomProduit, int pPrix) {
-            nomProduit = pNomProduit;
-            prix = pPrix;
         }
-        public static void receptionnerProduit( int pQuantite) {
+        
+        public void receptionnerProduit( int pQuantite) {
             this.quantite = this.quantite + pQuantite;
         }    
 
