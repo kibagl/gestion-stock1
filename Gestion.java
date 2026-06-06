@@ -22,11 +22,13 @@ public class Gestion{
             nomProduit = pNomProduit;
             prix = pPrix;
         }
+        public static void receptionnerProduit( int pQuantite) {
+            this.quantite = this.quantite + pQuantite;
+        }    
 
     }
-    public static void receptionnerProduit( int pQuantite) {
-        this.quantite = this.quantite + pQuantite;
+    
 
         
-    }
+   
 }
